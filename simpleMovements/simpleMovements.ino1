@@ -1,0 +1,1054 @@
+
+#include <Braccio.h>
+#include <Servo.h>
+
+
+
+
+Servo base;
+Servo shoulder;
+Servo elbow;
+Servo wrist_rot;
+Servo wrist_ver;
+Servo gripper;
+
+void h8(){
+                         //(step delay, M1, M2, M3, M4, M5, M6);
+  Braccio.ServoMovement(30,           69,  90, 90, 133, 90,  54); 
+  delay(1000);
+  Braccio.ServoMovement(30,           69,  121, 130, 133, 90,  54);  
+  //Wait 1 second
+  delay(1000);
+  Braccio.ServoMovement(30,           69,  121, 130, 133, 90,  73);  
+  delay(1000);
+  Braccio.ServoMovement(30,           69,  121, 90, 133, 90,  73);  
+  delay(1000);
+  
+  }
+
+void h8_down(){
+  Braccio.ServoMovement(30,           69,  90, 90, 133, 90,  73); 
+  delay(1000);
+   Braccio.ServoMovement(30,           69,  121, 130, 133, 90,  73);  
+  delay(1000);
+  Braccio.ServoMovement(30,           69,  121, 130, 133, 90,  73);  
+  delay(1000);
+   Braccio.ServoMovement(30,           69,  121, 130, 133, 90,  54);  
+  delay(1000);
+  Braccio.ServoMovement(30,           69,  121, 90, 133, 90,  54);  
+  delay(1000);
+
+  
+  }
+
+void h7(){
+                           //(step delay, M1, M2, M3, M4, M5, M6);
+   Braccio.ServoMovement(30,              74,  90, 90, 135, 90,  54);
+   delay(1000);
+  Braccio.ServoMovement(30,               74,  118, 131, 135, 90,  54);  
+  delay(1000);
+   Braccio.ServoMovement(30,              74,  118, 131, 135, 90,  73);  
+
+  delay(1000);
+   Braccio.ServoMovement(30,              74,  118, 90, 135, 90,  73);  
+  delay(1000);
+  }
+
+void h7_down(){
+ Braccio.ServoMovement(30,                74,  90, 90, 135, 90,  73);
+   delay(1000);
+  Braccio.ServoMovement(30,               74,  118, 131, 135, 90,  73);  
+  delay(1000);
+   Braccio.ServoMovement(30,              74,  118, 131, 135, 90,  54);  
+
+  delay(1000);
+   Braccio.ServoMovement(30,              74,  118, 90, 135, 90,  54);  
+  delay(1000);
+
+  }
+
+void h6(){
+                           //(step delay, M1, M2, M3, M4, M5, M6);
+   Braccio.ServoMovement(30,              79.8,  90, 90, 140, 90,  54);
+   delay(1000);
+  Braccio.ServoMovement(30,               79.8,  118, 127, 140, 90,  54);  
+  delay(1000);
+   Braccio.ServoMovement(30,              79.8,  118, 127, 140, 90,  73);  
+
+  delay(1000);
+   Braccio.ServoMovement(30,              79.8,  118, 90, 140, 90,  73);  
+  delay(1000);
+
+  }
+
+ void h6_down(){
+
+                          //(step delay, M1, M2, M3, M4, M5, M6);
+  Braccio.ServoMovement(30,              79.8,  90, 90, 140, 90,  73);
+   delay(1000);
+  Braccio.ServoMovement(30,              79.8,  118, 127, 140, 90,  73);  
+  delay(1000);
+   Braccio.ServoMovement(30,              79.8,  118, 127, 140, 90,  54);  
+
+  delay(1000);
+   Braccio.ServoMovement(30,              79.8,  118, 90, 140, 90,  54);  
+  delay(1000);
+
+
+  }
+
+void h5(){
+                           //(step delay, M1, M2, M3, M4, M5, M6);
+//   Braccio.ServoMovement(30,              85,  90, 90, 135, 90,  54);
+//   delay(1000);
+  Braccio.ServoMovement(30,               85,  115, 134, 135, 90,  54);  
+  delay(1000);
+   Braccio.ServoMovement(30,              85,  115, 134, 135, 90,  73);  
+
+  delay(1000);
+   Braccio.ServoMovement(30,              85,  115, 90, 135, 90,  73);  
+  delay(1000);
+  Braccio.ServoMovement(30,            90,  90, 90, 90, 90,  73); 
+  delay(1000);
+  }
+
+  void h5_down(){
+                           //(step delay, M1, M2, M3, M4, M5, M6);
+//   Braccio.ServoMovement(30,              85,  90, 90, 135, 90,  73);
+//   delay(1000);
+  Braccio.ServoMovement(30,               85,  115, 134, 135, 90,  73);  
+  delay(1000);
+   Braccio.ServoMovement(30,              85,  115, 134, 135, 90,  54);  
+
+  delay(1000);
+   Braccio.ServoMovement(30,              85,  115, 90, 135, 90,  54);  
+  delay(1000);
+  Braccio.ServoMovement(30,            90,  90, 90, 90, 90,  52); 
+    delay(1000); 
+  }
+
+void h4(){
+//  Braccio.ServoMovement(30,              93.5,  90, 90, 136, 90,  54);
+//   delay(1000);
+  Braccio.ServoMovement(30,               93.5,  116, 133, 136, 90,  54);  
+  delay(1000);
+   Braccio.ServoMovement(30,              93.5,  116, 133, 136, 90,  73);  
+
+  delay(1000);
+   Braccio.ServoMovement(30,              93.5,  116, 90, 136, 90,  73);  
+  delay(1000);
+  Braccio.ServoMovement(30,            90,  90, 90, 90, 90,  73); 
+  delay(1000);
+  }
+    void h4_down(){
+//  Braccio.ServoMovement(30,               93.5,  90, 90, 136, 90,  73);
+//   delay(1000);
+  Braccio.ServoMovement(30,               93.5,  116, 133, 136, 90,  73);  
+  delay(1000);
+   Braccio.ServoMovement(30,              93.5,  116, 133, 136, 90,  54);  
+
+  delay(1000);
+   Braccio.ServoMovement(30,              93.5,  116, 90, 136, 90,  54);  
+  delay(1000);
+  Braccio.ServoMovement(30,            90,  90, 90, 90, 90,  52); 
+    delay(1000); 
+  }
+
+  void h3(){
+                             //(step delay, M1, M2, M3, M4, M5, M6);
+//   Braccio.ServoMovement(30,              98,  90, 90, 140, 90,  54);
+//   delay(1000);
+  Braccio.ServoMovement(30,               98,  118, 127, 140, 90,  54);  
+  delay(1000);
+   Braccio.ServoMovement(30,              98,  118, 127, 140, 90,  73);  
+
+  delay(1000);
+   Braccio.ServoMovement(30,              98,  118, 90, 140, 90,  73);  
+  delay(1000);
+  Braccio.ServoMovement(30,            90,  90, 90, 90, 90,  73); 
+  delay(1000);
+  }
+  void h3_down(){
+                           //(step delay, M1, M2, M3, M4, M5, M6);
+//   Braccio.ServoMovement(30,              98,  90, 90, 140, 90,  73);
+//   delay(1000);
+  Braccio.ServoMovement(30,               98,  118, 127, 140, 90,  73);  
+  delay(1000);
+   Braccio.ServoMovement(30,              98,  118, 127, 140, 90,  54);  
+
+  delay(1000);
+   Braccio.ServoMovement(30,              98,  118, 90, 140, 90,  54);  
+  delay(1000);
+  Braccio.ServoMovement(30,            90,  90, 90, 90, 90,  52); 
+    delay(1000); 
+  }
+
+
+
+void h2(){
+                           //(step delay, M1, M2, M3, M4, M5, M6);
+//   Braccio.ServoMovement(30,               104,  90, 90, 135, 90,  54);
+//   delay(1000);
+  Braccio.ServoMovement(30,                104,  118, 130, 135, 90,  54);  
+  delay(1000);
+   Braccio.ServoMovement(30,               104,  118, 130, 135, 90,  73);  
+
+  delay(1000);
+   Braccio.ServoMovement(30,               104,  118, 90, 135, 90,  73);  
+  delay(1000);
+  Braccio.ServoMovement(30,            90,  90, 90, 90, 90,  73); 
+  delay(1000);
+}
+
+  
+void h2_down(){
+                           //(step delay, M1, M2, M3, M4, M5, M6);
+//   Braccio.ServoMovement(30,              104,  90, 90, 135, 90,  73);
+//   delay(1000);
+  Braccio.ServoMovement(30,                104,  118, 130, 135, 90,  73);  
+  delay(1000);
+   Braccio.ServoMovement(30,               104,  118, 130, 135, 90,  54);  
+
+  delay(1000);
+   Braccio.ServoMovement(30,               104,  118, 90, 135, 90,  54);  
+  delay(1000);
+  Braccio.ServoMovement(30,            90,  90, 90, 90, 90,  52); 
+    delay(1000); 
+  }
+  
+
+
+ void h1(){
+                         //(step delay, M1, M2, M3, M4, M5, M6);
+//  Braccio.ServoMovement(30,           108,  90, 90, 137, 90,  52); 
+//  delay(1000);
+  Braccio.ServoMovement(30,           108,  122, 123, 137, 90,  52);  
+  //Wait 1 second
+  delay(1000);
+  Braccio.ServoMovement(30,           108,  122, 123, 137, 90,  73);  
+  delay(1000);
+  Braccio.ServoMovement(30,           108,  122, 90, 135, 90,  73);  
+  delay(1000);
+  Braccio.ServoMovement(30,            90,  90, 90, 90, 90,  73); 
+  delay(1000);
+
+ }
+ void h1_down(){
+  
+                         //(step delay, M1, M2, M3, M4, M5, M6);
+//  Braccio.ServoMovement(30,           108,  90, 90, 137, 90,  73); 
+//  delay(1000);
+  Braccio.ServoMovement(30,           108,  122, 123, 137, 90,  73);  
+  //Wait 1 second
+  delay(1000);
+  Braccio.ServoMovement(30,           108,  122, 123, 137, 90,  52);  
+  delay(1000);
+  Braccio.ServoMovement(30,           108,  122, 90, 137, 90,  52);  
+  delay(1000);
+  Braccio.ServoMovement(30,            90,  90, 90, 90, 90,  52); 
+    delay(1000); 
+
+ }
+
+void g8(){
+                           //(step delay, M1, M2, M3, M4, M5, M6);
+//   Braccio.ServoMovement(30,           67,  90, 90, 137, 90,  54); 
+//  delay(1000);
+  Braccio.ServoMovement(30,           67,  110, 140, 137, 90,  54);  
+  //Wait 1 second
+  delay(1000);
+  Braccio.ServoMovement(30,           67,  110, 140, 137, 90,  73);  
+  delay(1000);
+  Braccio.ServoMovement(30,           67,  110, 90, 137, 90,  73);  
+  delay(1000);
+  Braccio.ServoMovement(30,            90,  90, 90, 90, 90,  73); 
+  delay(1000);
+  }
+  
+void g8_down(){
+//  Braccio.ServoMovement(30,           67,  90, 90, 137, 90,  73); 
+//  delay(1000);
+   Braccio.ServoMovement(30,          67,  110, 140, 137, 90,  73);  
+  delay(1000);
+  Braccio.ServoMovement(30,           67,  110, 140, 137, 90,  73);  
+  delay(1000);
+   Braccio.ServoMovement(30,          67,  110, 140, 137, 90,  54);  
+  delay(1000);
+  Braccio.ServoMovement(30,           67,  110, 90, 137, 90,  54);  
+  delay(1000);
+  Braccio.ServoMovement(30,            90,  90, 90, 90, 90,  52); 
+    delay(1000); 
+  
+  }
+void g7(){
+                           //(step delay, M1, M2, M3, M4, M5, M6);
+//  Braccio.ServoMovement(30,           73,  90, 90, 136, 90,  54); 
+//  delay(1000);
+  Braccio.ServoMovement(30,           73,  105, 145, 136, 90,  54);  
+  //Wait 1 second
+  delay(1000);
+  Braccio.ServoMovement(30,           73,  105, 145, 136, 90,  73);  
+  delay(1000);
+  Braccio.ServoMovement(30,           73,  105, 90, 136, 90,  73);  
+  delay(1000);
+  Braccio.ServoMovement(30,            90,  90, 90, 90, 90,  73); 
+  delay(1000);
+  }
+    void g7_down(){
+                           //(step delay, M1, M2, M3, M4, M5, M6);
+//  Braccio.ServoMovement(30,           73,  90, 90, 136, 90,  73); 
+//  delay(1000);
+  Braccio.ServoMovement(30,           73,  105, 145, 136, 90,  73);  
+  //Wait 1 second
+  delay(1000);
+  Braccio.ServoMovement(30,           73,  105, 145, 136, 90,  54);  
+  delay(1000);
+  Braccio.ServoMovement(30,           73,  105, 90, 136, 90,  54);  
+  delay(1000);
+  Braccio.ServoMovement(30,            90,  90, 90, 90, 90,  52); 
+    delay(1000); 
+  }
+
+
+void g6(){
+                           //(step delay, M1, M2, M3, M4, M5, M6);
+//  Braccio.ServoMovement(30,           78,  90, 90, 127, 90,  54); 
+//  delay(1000);
+  Braccio.ServoMovement(30,           78,  98, 157, 127, 90,  54);  
+  //Wait 1 second
+  delay(1000);
+  Braccio.ServoMovement(30,           78,  98, 157, 127, 90,  73);  
+  delay(1000);
+  Braccio.ServoMovement(30,           78,  98, 90, 127, 90,  73);  
+  delay(1000);
+  Braccio.ServoMovement(30,            90,  90, 90, 90, 90,  73); 
+  delay(1000);
+  }
+void g6_down(){
+                           //(step delay, M1, M2, M3, M4, M5, M6);
+//  Braccio.ServoMovement(30,           78,  90, 90, 127, 90,  73); 
+//  delay(1000);
+  Braccio.ServoMovement(30,           78,  98, 157, 127, 90,  73);  
+  //Wait 1 second
+  delay(1000);
+  Braccio.ServoMovement(30,           78,  98, 157, 127, 90,  54);  
+  delay(1000);
+  Braccio.ServoMovement(30,           78,  98, 90, 127, 90,  54);  
+  delay(1000);
+  Braccio.ServoMovement(30,            90,  90, 90, 90, 90,  52); 
+    delay(1000); 
+  }
+
+  void g5(){
+                           //(step delay, M1, M2, M3, M4, M5, M6);
+//  Braccio.ServoMovement(30,           85.5,  90, 90, 127, 90,  55); 
+//  delay(1000);
+  Braccio.ServoMovement(30,           85.5,  97, 158, 127, 90,  55);  
+  //Wait 1 second
+  delay(1000);
+  Braccio.ServoMovement(30,           85.5,  97, 158, 127, 90,  73);  
+  delay(1000);
+  Braccio.ServoMovement(30,           85.5,  97, 90, 127, 90,  73);  
+  delay(1000);
+  Braccio.ServoMovement(30,            90,  90, 90, 90, 90,  73); 
+  delay(1000);
+  }
+    void g5_down(){
+                           //(step delay, M1, M2, M3, M4, M5, M6);
+//  Braccio.ServoMovement(30,           85.5,  90, 90, 127, 90,  73); 
+//  delay(1000);
+  Braccio.ServoMovement(30,           85.5,  97, 158, 127, 90,  73);  
+  //Wait 1 second
+  delay(1000);
+  Braccio.ServoMovement(30,           85.5,  97, 158, 127, 90,  55);  
+  delay(1000);
+  Braccio.ServoMovement(30,           85.5,  97, 90, 127, 90,  55);  
+  delay(1000);
+  Braccio.ServoMovement(30,            90,  90, 90, 90, 90,  52); 
+    delay(1000); 
+  }
+
+
+ void g4(){
+                           //(step delay, M1, M2, M3, M4, M5, M6);
+  Braccio.ServoMovement(30,           93,  90, 90, 127, 90,  55); 
+  delay(1000);
+  Braccio.ServoMovement(30,           93,  97, 158, 127, 90,  55);  
+  //Wait 1 second
+  delay(1000);
+  Braccio.ServoMovement(30,           93,  97, 158, 127, 90,  73);  
+  delay(1000);
+  Braccio.ServoMovement(30,           93,  97, 90, 127, 90,  73);  
+  delay(1000);
+  Braccio.ServoMovement(30,            90,  90, 90, 90, 90,  73); 
+  delay(1000);
+  }
+
+ void g4_down(){
+                           //(step delay, M1, M2, M3, M4, M5, M6);
+  Braccio.ServoMovement(30,           93,  90, 90, 127, 90,  73); 
+  delay(1000);
+  Braccio.ServoMovement(30,           93,  97, 158, 127, 90,  73);  
+  //Wait 1 second
+  delay(1000);
+  Braccio.ServoMovement(30,           93,  97, 158, 127, 90,  55);  
+  delay(1000);
+  Braccio.ServoMovement(30,           93,  97, 90, 127, 90,  55);  
+  delay(1000);
+  Braccio.ServoMovement(30,            90,  90, 90, 90, 90,  52); 
+    delay(1000); 
+  }
+
+  
+  
+void g3(){
+                            //(step delay, M1, M2, M3, M4, M5, M6);
+//  Braccio.ServoMovement(30,            99,  90, 90, 125, 90,  55); 
+//  delay(1000);
+  Braccio.ServoMovement(30,           99,  98, 158, 125, 90,  55);  
+  //Wait 1 second
+  delay(1000);
+  Braccio.ServoMovement(30,           99,  98, 158, 125, 90,  73);  
+  delay(1000);
+  Braccio.ServoMovement(30,           99,  98, 90, 125, 90,  73);  
+  delay(1000);
+  Braccio.ServoMovement(30,            90,  90, 90, 90, 90,  73); 
+  delay(1000);
+  }
+
+  void g3_down(){
+                            //(step delay, M1, M2, M3, M4, M5, M6);
+//  Braccio.ServoMovement(30,            99,  90, 90, 125, 90,  73); 
+//  delay(1000);
+  Braccio.ServoMovement(30,           99,  98, 158, 125, 90,  73);  
+  //Wait 1 second
+  delay(1000);
+  Braccio.ServoMovement(30,           99,  98, 158, 125, 90,  55);  
+  delay(1000);
+  Braccio.ServoMovement(30,           99,  98, 90, 125, 90,  55);  
+  delay(1000);
+  Braccio.ServoMovement(30,            90,  90, 90, 90, 90,  52); 
+    delay(1000); 
+  }
+  
+void g2(){
+                           //(step delay, M1, M2, M3, M4, M5, M6);
+//  Braccio.ServoMovement(30,           104.9,  90, 90, 129, 90,  54); 
+//  delay(1000);
+  Braccio.ServoMovement(30,           104.9,  102, 153, 129, 90,  54);  
+  //Wait 1 second
+  delay(1000);
+  Braccio.ServoMovement(30,           104.9,  102, 153, 129, 90,  73);  
+  delay(1000);
+  Braccio.ServoMovement(30,           104.9,  102, 90, 129, 90,  73);  
+  delay(1000);
+  Braccio.ServoMovement(30,            90,  90, 90, 90, 90,  73); 
+  delay(1000);
+  }
+
+void g2_down(){
+                           //(step delay, M1, M2, M3, M4, M5, M6);
+//  Braccio.ServoMovement(30,           104.9,  102, 90, 129, 90,  73); 
+//  delay(1000);
+  Braccio.ServoMovement(30,           104.9,  102, 153, 129, 90,  73);  
+  //Wait 1 second
+  delay(1000);
+  Braccio.ServoMovement(30,           104.9,  102, 153, 129, 90,  54);  
+  delay(1000);
+  Braccio.ServoMovement(30,           104.9,  102, 90, 130, 90,  54);  
+  delay(1000);
+  Braccio.ServoMovement(30,            90,  90, 90, 90, 90,  52); 
+    delay(1000); 
+  }
+  
+
+  void g1(){
+                           //(step delay, M1, M2, M3, M4, M5, M6);
+//  Braccio.ServoMovement(30,           110,  90, 90, 139, 90,  54); 
+//  delay(1000);
+  Braccio.ServoMovement(30,           110,  110, 138, 139, 90,  54);  
+  //Wait 1 second
+  delay(1000);
+  Braccio.ServoMovement(30,           110,  110, 138, 139, 90,  73);  
+  delay(1000);
+  Braccio.ServoMovement(30,           110,  110, 90, 139, 90,  73);  
+  delay(1000);
+  Braccio.ServoMovement(30,            90,  90, 90, 90, 90,  73); 
+  delay(1000);
+  }
+
+
+  
+void g1_down(){
+//  Braccio.ServoMovement(30,           110,  90, 90, 139, 90,  73); 
+//  delay(1000);
+   Braccio.ServoMovement(30,          110,  110, 138, 139, 90,  73);  
+  delay(1000);
+  Braccio.ServoMovement(30,           110,  110, 138, 139, 90,  73);  
+  delay(1000);
+   Braccio.ServoMovement(30,          110,  110, 138, 139, 90,  54);  
+  delay(1000);
+  Braccio.ServoMovement(30,           110,  110, 90, 139, 90,  54);  
+  delay(1000);
+  Braccio.ServoMovement(30,            90,  90, 90, 90, 90,  52); 
+    delay(1000); 
+  
+  }
+
+  void f8(){
+                           //(step delay, M1, M2, M3, M4, M5, M6);
+//  Braccio.ServoMovement(30,           66,  90, 90, 109, 90,  54); 
+//  delay(1000);
+  Braccio.ServoMovement(30,           66,  83, 179, 109, 90,  54);  
+  //Wait 1 second
+  delay(1000);
+  Braccio.ServoMovement(30,           66,  83, 179, 109, 90,  73);  
+  delay(1000);
+  Braccio.ServoMovement(30,           66,  83, 90, 109, 90,  73);  
+  delay(1000);
+  Braccio.ServoMovement(30,            90,  90, 90, 90, 90,  73); 
+  delay(1000);
+  }
+
+  
+    void f8_down(){
+                           //(step delay, M1, M2, M3, M4, M5, M6);
+//  Braccio.ServoMovement(30,           66,  90, 90, 109, 90,  73); 
+//  delay(1000);
+  Braccio.ServoMovement(30,           66,  83, 179, 109, 90,  73);  
+  //Wait 1 second
+  delay(1000);
+  Braccio.ServoMovement(30,           66,  83, 179, 109, 90,  54);  
+  delay(1000);
+  Braccio.ServoMovement(30,           66,  83, 90, 109, 90,  54);  
+  delay(1000);
+  Braccio.ServoMovement(30,            90,  90, 90, 90, 90,  52); 
+    delay(1000); 
+  }
+
+
+void f7(){
+                           //(step delay, M1, M2, M3, M4, M5, M6);
+//  Braccio.ServoMovement(30,           72,  90, 90, 112, 90,  54); 
+//  delay(1000);
+  Braccio.ServoMovement(30,           72,  81, 180, 112, 90,  54);  
+  //Wait 1 second
+  delay(1000);
+  Braccio.ServoMovement(30,           72,  81, 180, 112, 90,  73);  
+  delay(1000);
+  Braccio.ServoMovement(30,           72,  81, 90, 112, 90,  73);  
+  delay(1000);
+  Braccio.ServoMovement(30,            90,  90, 90, 90, 90,  73); 
+  delay(1000);
+  }
+
+void f7_down(){
+                           //(step delay, M1, M2, M3, M4, M5, M6);
+//  Braccio.ServoMovement(30,           72,  90, 90, 114, 90,  73); 
+//  delay(1000);
+  Braccio.ServoMovement(30,           72,  81, 180, 114, 90,  73);  
+  //Wait 1 second
+  delay(1000);
+  Braccio.ServoMovement(30,           72,  81, 180, 114, 90,  54);  
+  delay(1000);
+  Braccio.ServoMovement(30,           72,  81, 90, 114, 90,  54);  
+  delay(1000);
+  Braccio.ServoMovement(30,            90,  90, 90, 90, 90,  52); 
+    delay(1000); 
+  }
+
+  void f6(){
+                           //(step delay, M1, M2, M3, M4, M5, M6);
+//  Braccio.ServoMovement(30,           78,  90, 90, 116, 90,  54); 
+//  delay(1000);
+  Braccio.ServoMovement(30,           78,  78, 180, 116, 90,  54);  
+  //Wait 1 second
+  delay(1000);
+  Braccio.ServoMovement(30,           78,  78, 180, 116, 90,  73);  
+  delay(1000);
+  Braccio.ServoMovement(30,           78,  78, 90, 116, 90,  73);  
+  delay(1000);
+  Braccio.ServoMovement(30,            90,  90, 90, 90, 90,  73); 
+  delay(1000);
+  }
+
+   void f6_down(){
+                           //(step delay, M1, M2, M3, M4, M5, M6);
+//  Braccio.ServoMovement(30,           78,  90, 90, 116, 90,  73); 
+//  delay(1000);
+  Braccio.ServoMovement(30,           78,  78, 180, 116, 90,  73);  
+  //Wait 1 second
+  delay(1000);
+  Braccio.ServoMovement(30,           78,  78, 180, 116, 90,  54);  
+  delay(1000);
+  Braccio.ServoMovement(30,           78,  78, 90, 116, 90,  54);  
+  delay(1000);
+  Braccio.ServoMovement(30,            90,  90, 90, 90, 90,  52); 
+    delay(1000); 
+  }
+
+  void f5(){
+                           //(step delay, M1, M2, M3, M4, M5, M6);
+//  Braccio.ServoMovement(30,           84,  90, 90, 118, 90,  54); 
+//  delay(1000);
+  Braccio.ServoMovement(30,           84,  77, 180, 118, 90,  54);  
+  //Wait 1 second
+  delay(1000);
+  Braccio.ServoMovement(30,           84,  77, 180, 118, 90,  73);  
+  delay(1000);
+  Braccio.ServoMovement(30,           84,  77, 90, 118, 90,  73);  
+  delay(1000);
+  Braccio.ServoMovement(30,            90,  90, 90, 90, 90,  73); 
+  delay(1000);
+  }
+
+    void f5_down(){
+                           //(step delay, M1, M2, M3, M4, M5, M6);
+//  Braccio.ServoMovement(30,           84,  90, 90, 118, 90,  73); 
+//  delay(1000);
+  Braccio.ServoMovement(30,           84,  77, 180, 118, 90,  73);  
+  //Wait 1 second
+  delay(1000);
+  Braccio.ServoMovement(30,           84,  77, 180, 118, 90,  54);  
+  delay(1000);
+  Braccio.ServoMovement(30,           84,  77, 90, 118, 90,  54);  
+  delay(1000);
+  Braccio.ServoMovement(30,            90,  90, 90, 90, 90,  52); 
+    delay(1000); 
+  }
+    
+void f4(){
+                           //(step delay, M1, M2, M3, M4, M5, M6);
+//  Braccio.ServoMovement(30,           93.5,  90, 90, 118, 90,  52); 
+//  delay(1000);
+  Braccio.ServoMovement(30,           93.5,  77, 180, 118, 90,  52);  
+  //Wait 1 second
+  delay(1000);
+  Braccio.ServoMovement(30,           93.5,  77, 180, 118, 90,  73);  
+  delay(1000);
+  Braccio.ServoMovement(30,           93.5,  77, 90, 118, 90,  73);  
+  delay(1000);
+  Braccio.ServoMovement(30,            90,  90, 90, 90, 90,  73); 
+  delay(1000);
+  }
+
+void f4_down(){
+                           //(step delay, M1, M2, M3, M4, M5, M6);
+//  Braccio.ServoMovement(30,           93.5,  90, 90, 118, 90,  73); 
+//  delay(1000);
+  Braccio.ServoMovement(30,           93.5,  77, 180, 118, 90,  73);  
+  //Wait 1 second
+  delay(1000);
+  Braccio.ServoMovement(30,           93.5,  77, 180, 118, 90,  52);  
+  delay(1000);
+  Braccio.ServoMovement(30,           93.5,  77, 90, 118, 90,  52);  
+  delay(1000);
+  Braccio.ServoMovement(30,            90,  90, 90, 90, 90,  52); 
+    delay(1000); 
+  }
+ void f3(){
+                           //(step delay, M1, M2, M3, M4, M5, M6);
+//  Braccio.ServoMovement(30,           100,  90, 90, 117, 90,  54); 
+//  delay(1000);
+  Braccio.ServoMovement(30,           100,  78, 180, 117, 90,  54);  
+  //Wait 1 second
+  delay(1000);
+  Braccio.ServoMovement(30,           100,  78, 180, 117, 90,  73);  
+  delay(1000);
+  Braccio.ServoMovement(30,           100,  78, 90, 117, 90,  73);  
+  delay(1000);
+  Braccio.ServoMovement(30,            90,  90, 90, 90, 90,  73); 
+  delay(1000);
+  }
+   void f3_down(){
+                           //(step delay, M1, M2, M3, M4, M5, M6);
+//  Braccio.ServoMovement(30,           100,  90, 90, 117, 90,  73); 
+//  delay(1000);
+  Braccio.ServoMovement(30,           100,  78, 180, 117, 90,  73);  
+  //Wait 1 second
+  delay(1000);
+  Braccio.ServoMovement(30,           100,  78, 180, 117, 90,  54);  
+  delay(1000);
+  Braccio.ServoMovement(30,           100,  78, 90, 117, 90,  54);  
+  delay(1000);
+  Braccio.ServoMovement(30,            90,  90, 90, 90, 90,  52); 
+    delay(1000); 
+  }
+void f2(){
+                           //(step delay, M1, M2, M3, M4, M5, M6);
+//  Braccio.ServoMovement(30,           106.9,  90, 90, 116, 90,  54); 
+//  delay(1000);
+  Braccio.ServoMovement(30,           106.9,  81, 178, 116, 90,  54);  
+  //Wait 1 second
+  delay(1000);
+  Braccio.ServoMovement(30,           106.9,  81, 178, 116, 90,  73);  
+  delay(1000);
+  Braccio.ServoMovement(30,           106.9,  81, 90, 116, 90,  73);  
+  delay(1000);
+  Braccio.ServoMovement(30,            90,  90, 90, 90, 90,  73); 
+  delay(1000);
+  }
+
+  void f2_down(){
+                           //(step delay, M1, M2, M3, M4, M5, M6);
+//  Braccio.ServoMovement(30,           106.9,  90, 90, 116, 90,  73); 
+//  delay(1000);
+  Braccio.ServoMovement(30,           106.9,  81, 178, 116, 90,  73);  
+  //Wait 1 second
+  delay(1000);
+  Braccio.ServoMovement(30,           106.9,  81, 178, 116, 90,  54);  
+  delay(1000);
+  Braccio.ServoMovement(30,           106.9,  81, 90, 116, 90,  54);  
+  delay(1000);
+  Braccio.ServoMovement(30,            90,  90, 90, 90, 90,  52); 
+    delay(1000); 
+  }
+ 
+ void f1(){
+                           //(step delay, M1, M2, M3, M4, M5, M6);
+//  Braccio.ServoMovement(30,           112,  90, 90, 110, 90,  54); 
+//  delay(1000);
+  Braccio.ServoMovement(30,           112,  83.5, 180, 110, 90,  54);  
+  //Wait 1 second
+  delay(1000);
+  Braccio.ServoMovement(30,           112,  83.5, 180, 110, 90,  73);  
+  delay(1000);
+  Braccio.ServoMovement(30,           112,  83.5, 90, 110, 90,  73);  
+  delay(1000);
+  Braccio.ServoMovement(30,            90,  90, 90, 90, 90,  73); 
+  delay(1000);
+  }
+
+   void f1_down(){
+                           //(step delay, M1, M2, M3, M4, M5, M6);
+//  Braccio.ServoMovement(30,           112,  90, 90, 110, 90,  73); 
+//  delay(1000);
+  Braccio.ServoMovement(30,           112,  83.5, 180, 110, 90,  73);  
+  //Wait 1 second
+  delay(1000);
+  Braccio.ServoMovement(30,           112,  83.5, 180, 110, 90,  54);  
+  delay(1000);
+  Braccio.ServoMovement(30,           112,  83.5, 90, 110, 90,  54);  
+  delay(1000);
+  Braccio.ServoMovement(30,            90,  90, 90, 90, 90,  52); 
+  delay(1000); 
+  }
+
+void e8(){
+                           //(step delay, M1, M2, M3, M4, M5, M6);
+//  Braccio.ServoMovement(30,           64,  90, 90, 122, 90,  54); 
+//  delay(1000);
+  Braccio.ServoMovement(30,           64,  75, 180, 122, 90,  54);  
+  //Wait 1 second
+  delay(1000);
+  Braccio.ServoMovement(30,           64,  75, 180, 122, 90,  73);  
+  delay(1000);
+  Braccio.ServoMovement(30,           64,  75, 90, 122, 90,  73);  
+  delay(1000);
+  Braccio.ServoMovement(30,            90,  90, 90, 90, 90,  73); 
+  delay(1000);
+
+  }
+
+void e8_down(){
+                          //(step delay, M1, M2, M3, M4, M5, M6);
+//  Braccio.ServoMovement(30,           64,  90, 90, 122, 90,  73); 
+//  delay(1000);
+  Braccio.ServoMovement(30,           64,  75, 180, 122, 90,  73);  
+  //Wait 1 second
+  delay(1000);
+  Braccio.ServoMovement(30,           64,  75, 180, 122, 90,  54);  
+  delay(1000);
+  Braccio.ServoMovement(30,           64,  75, 90, 122, 90,  54); 
+  delay(1000);  
+  Braccio.ServoMovement(30,            90,  90, 90, 90, 90,  52); 
+  delay(1000);
+ 
+  }
+  void e7(){
+                           //(step delay, M1, M2, M3, M4, M5, M6);
+//  Braccio.ServoMovement(30,           70,  90, 90, 128, 90,  54); 
+//  delay(1000);
+  Braccio.ServoMovement(30,           70,  72, 179, 128, 90,  54);  
+  //Wait 1 second
+  delay(1000);
+  Braccio.ServoMovement(30,           70,  72, 179, 128, 90,  73);  
+  delay(1000);
+  Braccio.ServoMovement(30,           70,  72, 90, 128, 90,  73);  
+  delay(1000);
+  Braccio.ServoMovement(30,            90,  90, 90, 90, 90,  73); 
+  delay(1000);
+  }
+
+    void e7_down(){
+                           //(step delay, M1, M2, M3, M4, M5, M6);
+//  Braccio.ServoMovement(30,           70,  90, 90, 128, 90,  73); 
+//  delay(1000);
+  Braccio.ServoMovement(30,           70,  72, 179, 128, 90,  73);  
+  //Wait 1 second
+  delay(1000);
+  Braccio.ServoMovement(30,           70,  72, 179, 128, 90,  54);  
+  delay(1000);
+  Braccio.ServoMovement(30,           70,  72, 90, 128, 90,  54);  
+  delay(1000);
+  Braccio.ServoMovement(30,            90,  90, 90, 90, 90,  52); 
+  delay(1000);
+  }
+
+void e6(){
+                           //(step delay, M1, M2, M3, M4, M5, M6);
+//  Braccio.ServoMovement(30,           77,  90, 90, 131, 90,  54); 
+//  delay(1000);
+  Braccio.ServoMovement(30,           77,  71, 178, 131, 90,  54);  
+  //Wait 1 second
+  delay(1000);
+  Braccio.ServoMovement(30,           77,  71, 178, 131, 90,  73);  
+  delay(1000);
+  Braccio.ServoMovement(30,           77,  71, 90, 131, 90,  73);  
+  delay(1000);
+  Braccio.ServoMovement(30,            90,  90, 90, 90, 90,  73); 
+  delay(1000);
+  }
+void e6_down(){
+                           //(step delay, M1, M2, M3, M4, M5, M6);
+//  Braccio.ServoMovement(30,           77,  90, 90, 131, 90,  73); 
+//  delay(1000);
+  Braccio.ServoMovement(30,           77,  71, 178, 131, 90,  73);  
+  //Wait 1 second
+  delay(1000);
+  Braccio.ServoMovement(30,           77,  71, 178, 131, 90,  54);  
+  delay(1000);
+  Braccio.ServoMovement(30,           77,  71, 90, 131, 90,  54);  
+  delay(1000);
+  Braccio.ServoMovement(30,            90,  90, 90, 90, 90,  52); 
+  delay(1000);
+  }
+void e5(){
+                           //(step delay, M1, M2, M3, M4, M5, M6);
+//  Braccio.ServoMovement(30,           84,  90, 90, 133, 90,  54); 
+//  delay(1000);
+  Braccio.ServoMovement(30,           84,  70, 179, 133, 90,  54);  
+  //Wait 1 second
+  delay(1000);
+  Braccio.ServoMovement(30,           84,  70, 179, 133, 90,  73);  
+  delay(1000);
+  Braccio.ServoMovement(30,           84,  70, 90, 133, 90,  73);  
+  delay(1000);
+  Braccio.ServoMovement(30,            90,  90, 90, 90, 90,  73); 
+  delay(1000);
+  }
+
+  void e5_down(){
+                           //(step delay, M1, M2, M3, M4, M5, M6);
+//  Braccio.ServoMovement(30,           84,  90, 90, 133, 90,  73); 
+//  delay(1000);
+  Braccio.ServoMovement(30,           84,  70, 179, 133, 90,  73);  
+  //Wait 1 second
+  delay(1000);
+  Braccio.ServoMovement(30,           84,  70, 179, 133, 90,  54);  
+  delay(1000);
+  Braccio.ServoMovement(30,           84,  70, 90, 133, 90,  54);  
+  delay(1000);
+  Braccio.ServoMovement(30,            90,  90, 90, 90, 90,  52); 
+  delay(1000);
+  }
+
+void e4(){
+                           //(step delay, M1, M2, M3, M4, M5, M6);
+//  Braccio.ServoMovement(30,           93.6,  90, 90, 133, 90,  54); 
+//  delay(1000);
+  Braccio.ServoMovement(30,           93.6,  70, 179, 133, 90,  54);  
+  //Wait 1 second
+  delay(1000);
+  Braccio.ServoMovement(30,           93.6,  70, 179, 133, 90,  73);  
+  delay(1000);
+  Braccio.ServoMovement(30,           93.6,  70, 90, 133, 90,  73);  
+  delay(1000);
+  Braccio.ServoMovement(30,            90,  90, 90, 90, 90,  73); 
+  delay(1000);
+  }
+  void e4_down(){
+                           //(step delay, M1, M2, M3, M4, M5, M6);
+//  Braccio.ServoMovement(30,           93.6,  90, 90, 133, 90,  73); 
+//  delay(1000);
+  Braccio.ServoMovement(30,           93.6,  70, 179, 133, 90,  73);  
+  //Wait 1 second
+  delay(1000);
+  Braccio.ServoMovement(30,           93.6,  70, 179, 133, 90,  54);  
+  delay(1000);
+  Braccio.ServoMovement(30,           93.6,  70, 90, 133, 90,  54);  
+  delay(1000);
+  Braccio.ServoMovement(30,            90,  90, 90, 90, 90,  52); 
+  delay(1000);
+  }
+  void e3(){
+                           //(step delay, M1, M2, M3, M4, M5, M6);
+//  Braccio.ServoMovement(30,           101,  90, 90, 133, 90,  54); 
+//  delay(1000);
+  Braccio.ServoMovement(30,           101,  71, 177, 133, 90,  54);  
+  //Wait 1 second
+  delay(1000);
+  Braccio.ServoMovement(30,           101,  71, 177, 133, 90,  73);  
+  delay(1000);
+  Braccio.ServoMovement(30,           101,  71, 90, 133, 90,  73);  
+  delay(1000);
+  Braccio.ServoMovement(30,            90,  90, 90, 90, 90,  73); 
+  delay(1000);
+  }
+
+  
+  void e3_down(){
+                           //(step delay, M1, M2, M3, M4, M5, M6);
+//  Braccio.ServoMovement(30,           101,  90, 90, 133, 90,  73); 
+//  delay(1000);
+  Braccio.ServoMovement(30,           101,  71, 177, 133, 90,  73);  
+  //Wait 1 second
+  delay(1000);
+  Braccio.ServoMovement(30,           101,  71, 177, 133, 90,  54);  
+  delay(1000);
+  Braccio.ServoMovement(30,           101,  71, 90, 133, 90,  54);  
+  delay(1000);
+  Braccio.ServoMovement(30,            90,  90, 90, 90, 90,  52); 
+  delay(1000);
+  }
+  
+ void e2(){
+                           //(step delay, M1, M2, M3, M4, M5, M6);
+//  Braccio.ServoMovement(30,           107,  90, 90, 128, 90,  54); 
+//  delay(1000);
+  Braccio.ServoMovement(30,           107,  72, 179, 128, 90,  54);  
+  //Wait 1 second
+  delay(1000);
+  Braccio.ServoMovement(30,           107,  72, 179, 128, 90,  73);  
+  delay(1000);
+  Braccio.ServoMovement(30,           107,  72, 90, 128, 90,  73);  
+  delay(1000);
+  Braccio.ServoMovement(30,            90,  90, 90, 90, 90,  73); 
+  delay(1000);
+  }
+
+void e2_down(){
+                           //(step delay, M1, M2, M3, M4, M5, M6);
+//  Braccio.ServoMovement(30,           107,  90, 90, 128, 90,  73); 
+//  delay(1000);
+  Braccio.ServoMovement(30,           107,  72, 179, 128, 90,  73);  
+  //Wait 1 second
+  delay(1000);
+  Braccio.ServoMovement(30,           107,  72, 179, 128, 90,  54);  
+  delay(1000);
+  Braccio.ServoMovement(30,           107,  72, 90, 128, 90,  54);  
+  delay(1000);
+  Braccio.ServoMovement(30,            90,  90, 90, 90, 90,  52); 
+  delay(1000);
+  }
+
+  
+void e1(){
+                           //(step delay, M1, M2, M3, M4, M5, M6);
+//  Braccio.ServoMovement(30,           114.7,  90, 90, 125, 90,  54); 
+//  delay(1000);
+  Braccio.ServoMovement(30,           114.7,  74, 179, 125, 90,  54);  
+  //Wait 1 second
+  delay(1000);
+  Braccio.ServoMovement(30,           114.7,  74, 179, 125, 90,  73);  
+  delay(1000);
+  Braccio.ServoMovement(30,           114.7,  74, 90, 125, 90,  73);  
+  delay(1000);
+  Braccio.ServoMovement(30,            90,  90, 90, 90, 90,  73); 
+  ÖÖÂ    /pûNamyE/pûN7 ååå       ¿ 9  2          ;  2      ¡ s e c u r e W 2 . i n f       Ö◊˛    /pûNo†29/pûN: ååå       ¿ Û˝  @j         <  @j     ¡ S e c u r e W 2 _ E A P _ S u ¡ i t e _ 1 1 1 . e x e         ÖM    /pûNù`e7/pûNa ååå       ¿ .  
+          M  
+      ¡ S W 2 _ D E F A U L T   0 . 3 ¡ . x m l                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ;
+; SecureW2.inf -- SecureW2 Pre-Configuration File
+;
+; Manufacturer: SecureW2 B.V.
+;
+[Version]
+Signature = "$Windows NT$"
+Provider = "SecureW2"
+Config = 7
+;
+; Global configuration
+;
+; Startup wired zero config before installing
+; values: AUTO|DISABLED|START|STOP
+;[DOT3SVC]
+;Startup = AUTO
+; Startup wireless zero config before installing
+; values: AUTO|DISABLED|START|STOP
+[WZCSVC]
+Startup = AUTO
+[SSID.1]
+SSID = "eduroam"
+Name = "eduroam"
+Profile = "eduroam"
+AuthenticationMode = "WPA2"
+EncryptionType = "AES"
+
+
+;
+[Profile.1]
+Name = "eduroam"
+Description = "Abant ›zzet Baysal ‹niversitesi - E-mail kullan˝c˝ ad˝ ve ˛ifrenizi giriniz:"
+;
+; Connection
+;
+UseAlternateOuterIdentity= FALSE
+;UseAnonymousOuterIdentity = TRUE
+;AlternateOuterIdentity = kullaniciadiniz@ibu.edu.tr
+;UseSessionResumption = TRUE
+;
+; Certificates
+;
+VerifyServerCertificate = FALSE
+;VerifyServerName = TRUE
+;ServerName = somedomain.com
+;TrustedRootCA.0 = 3cdaba08113d934207b91d1c525683cc09bbc829
+;
+; Authentication
+;
+AuthenticationMethod = PAP
+
+;AltUsernameString = "Who are you:"
+;AltPasswordStr = "Enter your secret:"
+;AltRePasswordStr = "Re-Enter your secret:"
+;AltDomainStr = "Where are you from:"
+;AltCredsTitle = "Welcome to ..."
+;AltProfileStr = "Your profile is:"
+;
+; The following disables the "Save credentials" option in the popup
+;AllowCachePW = FALSE
+;
+; User Account
+;
+; To ask the user for credentials during startup use the following example:
+PromptUserForCredentials = FALSE
+UserName = PROMPTUSER
+;UserPassword = xxx
+;UserDomain = alfa-ariss.com
+;
+; The following saves the user credentials as computer credentials
+; allowing 802.1X authentication during startup
+; UseUserCredentialsForComputer = TRUE
+;
+; Advanced
+;
+;UseAlternateComputerCredentials = TRUE
+;ComputerName = admin
+;ComputerPassword = xxx
+;ComputerDomain = somedomain.com
+ServerCertificateOnLocalComputer = FALSE
+;CheckForMicrosoftExtension = TRUE
+AllowNewConnections = TRUE
+;UseMicrosoftCachedUserData = TRUE
+UseEmptyIdentity = FALSE
+;RenewIPAddress = TRUE
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                              !E;\”•œìBßÔæ’Ÿ~´∂ø2ƒ )Zfôˆ·“à&¶ \¯Íj”wÜóﬂπ†˝‹´ıÇ”+îcˇb@’ÆTPMyËØÜÀ\
+¢(IQùÃß%öÅÓ
+ﬁpCÅ“IÜõó=&ÄXUî28£ÅÚôhŸr≈xÚ§ﬁZˇ⁄…1∆uÒ‚êÈíŒqk£öÎêø%1öæLê"≤îN”ÄÔZÀ	ÄDùw—pe3@„6Œªıu¿¢EÜùCS
+ÅL'mÂ#7?’k“î4%(,Œf¸wòrîﬁ>öã∆X√˚ï~Ô∆ÛIÎé§-ûÁD9%,dﬂÀv⁄Á,	◊1— ]m›–€•jpW–>√K€£„:`)P
+ù§9:jÉ´77W0 ØÑ⁄Ça‡kÎbZ°µ˘‡z˘%¶3`Ÿ>o±n„‹ÄÀ>˘ﬂx(j(ô@_!W<jm	LkÉêﬁS|n˘ÄêµﬂEo)¿?Yıâ≤å+uî»eO˝∏6áﬁ¡h„5J_ºË‘ﬂØ¨uo…∂x¥zbîé2Q.∫..èÉ/W|Nd˛sa„V./ö¥¶mÏ€Z';ÃØZr˙ı^ﬂ‰ÚÕ€úö¡Q2Mßükÿ€÷æºƒãdÂ‘’e@(äaf%´æmì5‡ÊwıMâh»/jÉ°˚á{LïÎ:‡”H“AT£M∆‡á7õ¢ápü´_H˘p“+ù&(!‡gûq·v}Ü=Vgî¨Cmã2ØM2#H±E∞wﬁ5Z+P„’¢1‰CÎ¯u(î7Î&Gı1™´Ûch[<y–LD∑#Õkº≈à®IS¡˛|DÊäg-J`~ñ–’rœn(¯Q/ïñ›¯+.}#±˙©˝≤\¨ãº.E4…”q∞Âˆtâ¨Öf0BÍØGj3e]≤ÀM∏P¸àyn3VÿoÄ$	¬û”Û§.êmv{º!Ç°òèF}ÜÖR•†à'√·÷1(Ä√!¿RøïRïc£M”ÚE-F∞Ôg)†æ=Ádd©ü§('Û„#¶*Ôgf‹ﬂÅ€B-´qùÂL∂h^"y# ˝‰3&Üƒºü©Ä	(¬´ØóVÿÊ=∆uP°–úu‚ß‡†òSàìp∫eKpTvã–2?ì‚Ω»⁄¨µÏƒÈ  Qt ö\Æ˝Eﬁ∞ÀA∞6Íœì≠"}õRç-jû%èÄ!6 0≤K8Ö2’’mü≠a'õ&•çâRU•Ï¶ ÍÂ^Ù¬ª9£∞ÌjñVÏU…©1≤,≥ªtWÚ@%≤^ÀUø≈+$@”ÎÄD≠‡•6Ïãa˜t≈ÕÇ˙¨¨?∂™›∞#)Ä*I‘§ˆM◊ôNÁêºπÚ®/î äF„>pœ€£õ›
+˘°˜ø• ◊äÉãokÊ¥ŸxÊØÛqä?B·ûU4·(éÏ◊≥\U5™E°û‚∏HûÇ<]C5Wä ‘2ä™+∫nn†eÃ˝A
+˛SıaﬁwRai44#asb≠ï>j!Ω[öMiô√Î©"åCwr,÷@uT·ﬁx?JüËÓìl[È«1 Eœ5«I£P®õ˘w[∞Ôá¨$V¿æ:Ñîí)á‡î—†ú1M6Ô∏ÛÄ˘∞êEn_V‘#ú:@“Uo§+çz_≈Ç;7Ç—˝9§4t5Œ É’+™ﬁnQVS,ø•P®ˇ8¯w˚ÊP”∂R÷áé†%O”¨>Qf(Í…#‹ﬂ{pÊ™ÜÑäÑÜ¢,B„ßGL&•∫Ÿhæg¯ßHbVí4ÂãI_Â‚2B¿◊/˛Àéªèc,4ÈDπø‹$0îªÃm¿Q†Ò}≠kŸ:.‘⁄pHX[ˇ5∆ Çz.|PU`.<=XS ˙›h◊+˙(Øü-ƒ˘§Z˜ÃT¡$òÖxÖ√›5	re ÖÇ‡†ÿæπ"§ΩqhvÕcBR+D§h*é´6åÜﬁp{#áØœ∂XWøi≤ÿF’i˜V3BË™p·8H¬f„YÑ>Kem]§6	ˇπ¸È‚4£\åÖ÷¡	¸ÛHîÏÔ|(Ê>a?™v°7@œAŒÃÏUü∞óíÒY6¡]›?ã˙:˜IÒÈß5ÄEÜà£öm.Ô•+…À⁄œö¥b
+wÌDr|¿TáCTúV–f ÆÀì˝5,]6®â@ãÇÜ(A•MUï¥-àÄe∑◊U 4Iå∆Ä€°ë©«∆=VèÚc∆oMë“¿37Ç˙[Wi4–rkaﬁ∏·ki[ïth}õ5‰I±Áàêsﬂ"°($#V≥HE†)Aa÷y9^
+¿Ç“á“à„
+ˆÚø#’πÎ÷œ[rœ√ÆCﬁ	:‚dVıBp•v'SmNÍıïÃq¨Mo~‚ïçÌ1iñíÏçgz™qv;∫t#y¡K∑8QÍ~ï¡if¯<xP*‘ÙxLUBL,ö˛sàÂ6∑ß‘†Â@ ›û∏Twb;1©´?£¯màÛ˙ú3¨¯ALÜÜ<ˇ7Ë$20IÑ˚)$Xä«ãï˛;(·nΩe~1%Æ¢U+WÖµóâ≠∑=ß6¶ GÒ∑W°U≠¿q™æ $ﬁ5bH”[µfà1|íRR‰X∂}AÑUÌT≈ŸU]˝,7‡À¡ÛHCqQÈb.{	<©@@Lˆ€Ãºâ¸T~krø`ÚP◊◊…MWqÂ‹_hsäœ¶:8⁄§¯¢IÄzú§Q«Äa‰Ò1¨É–ÃÆA©zôòóåì[Ú—V“†¬!K˜8tÃjâ≠™é^<∏]Å†ÀÂ)ˆ`c“®ÆØ<zå!ß6Z‰‘¶y{∏Dt∑á”˚-}ißòQcP5K∆√ÂÅ˜øJ!±≤q_(0ô"P°—ç^˚é÷≠Éu-W~ñ∏E:j§h∞¬r¶ú~·ôz∆áS:Rˇda$æˆ8J£+Ó⁄-xÚ∫õœÉ2bΩπJV¬Ì—Ã·'ÊÍ"ì[πÔhÇˆ®(dâíüÿ.û∏üõÙTÒ.≤b
